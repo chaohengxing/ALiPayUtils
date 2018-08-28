@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
                 //假设已经从服务端获取必要数据
                 MyALipayUtils.ALiPayBuilder builder = new MyALipayUtils.ALiPayBuilder();
                 builder.setAppid("123")
-                        .setRsa("456")//根据情况设置Rsa2与Rsa
+                        .setRsa("456")//根据情况设置Rsa2与Rsa。这里一定要换成正确的私钥，不然会报错
                         .setMoney("0.01")//单位时分
                         .setTitle("支付测试")
                         .setOrderTradeId("487456")//从服务端获取
